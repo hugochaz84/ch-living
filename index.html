@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CH Living Marketplace 2.1</title>
+<link rel="stylesheet" href="styles.css">
+</head><body>
+<div class="app">
+<aside class="sidebar">
+<h2>CH Living</h2>
+<ul>
+<li onclick="show('inicio')">🏠 Inicio</li>
+<li onclick="show('market')">🏘️ Marketplace Vecinal</li>
+<li onclick="show('mis')">📦 Mis anuncios</li>
+<li onclick="show('admin')">🛡️ Administrador</li>
+</ul>
+</aside>
+
+<main>
+<section id="inicio" class="view active">
+<h1>CH Living</h1><p>Portal Condominal</p>
+</section>
+
+<section id="market" class="view">
+<div class="hero">
+<h1>🏘️ MARKETPLACE VECINAL</h1>
+<h3>Construyamos una comunidad más unida apoyándonos entre vecinos.</h3>
+<p>Bienvenido al Marketplace Vecinal de CH Living.</p>
+<p>Este espacio ha sido creado para fomentar la colaboración y el apoyo entre residentes, permitiendo promocionar, vender, intercambiar, donar o regalar productos y servicios dentro de nuestra comunidad.</p>
+<h3>¿Qué puedes hacer aquí?</h3>
+<ul>
+<li>🛒 Vender artículos nuevos o usados.</li>
+<li>🔄 Intercambiar objetos.</li>
+<li>🎁 Donar o regalar.</li>
+<li>💼 Promocionar servicios permitidos.</li>
+<li>🤝 Apoyar emprendedores.</li>
+</ul>
+</div>
+
+<div class="cards">
+<div class="card"><h4>Sofá reclinable</h4><p>$4,500 MXN</p></div>
+<div class="card"><h4>Bicicleta de montaña</h4><p>$2,800 MXN</p></div>
+</div>
+
+<button class="btn" onclick="rules.style.display='block'">Leer bases y publicar anuncio</button>
+
+<div id="rules" style="display:none">
+<h2>Bases y Condiciones</h2>
+<p>Todas las publicaciones son revisadas por la administración antes de ser publicadas.</p>
+<p>CH Living únicamente facilita la difusión de publicaciones entre residentes. Las negociaciones se realizan fuera de la plataforma.</p>
+<label><input id="chk" type="checkbox"> He leído y acepto las reglas.</label><br><br>
+<button class="btn" onclick="openForm()">Continuar y crear anuncio</button>
+</div>
+
+<div id="form" style="display:none">
+<h2>Crear Anuncio</h2>
+<input placeholder="Título del anuncio">
+<select><option>Venta</option><option>Servicio</option><option>Donación</option><option>Intercambio</option><option>Regalo</option></select>
+<input placeholder="Precio">
+<textarea placeholder="Descripción"></textarea>
+<input type="file">
+<button class="btn" onclick="alert('Anuncio enviado a revisión')">Enviar a revisión</button>
+</div>
+</section>
+
+<section id="mis" class="view">
+<h2>Mis anuncios</h2>
+<div class="card">Sofá reclinable - Pendiente</div>
+<div class="card">Clases de inglés - Aprobado</div>
+</section>
+
+<section id="admin" class="view">
+<h2>Panel Administrador</h2>
+<div class="card">Sofá reclinable - Pendiente<br><br><button class="btn">Aprobar</button></div>
+</section>
+</main></div>
+<script src="script.js"></script>
+</body></html>
