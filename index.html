@@ -1,34 +1,51 @@
 <!DOCTYPE html>
-<html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<html lang="es">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>CH Living Premium 3.0</title>
+
 <link rel="stylesheet" href="css/styles.css">
-</head><body>
+</head>
+
+<body>
+
 <div class="app">
+
 <aside class="sidebar">
-<h2>CH Living</h2>
-<ul>
-<li onclick="show('inicio')">🏠 Inicio</li>
-<li onclick="show('market')">🏘️ Marketplace Vecinal</li>
-<li onclick="show('mis')">📦 Mis anuncios</li>
-<li onclick="show('admin')">🛡️ Administrador</li>
-</ul>
+    <h2>CH Living</h2>
+
+    <ul>
+        <li onclick="show('inicio')">🏠 Inicio</li>
+        <li onclick="show('market')">🏘️ Marketplace Vecinal</li>
+        <li onclick="show('mis')">📦 Mis anuncios</li>
+        <li onclick="show('admin')">🛡️ Administrador</li>
+    </ul>
 </aside>
 
 <main>
+
 <section id="inicio" class="view active">
-<h1>CH Living</h1><p>Portal Condominal</p>
+    <h1>CH Living</h1>
+    <p>Portal Condominal</p>
 </section>
 
 <section id="market" class="view">
+
 <div class="hero">
+
 <h1>🚀 CH Living Premium 3.0</h1>
+
 <h3>Construyamos una comunidad más unida apoyándonos entre vecinos.</h3>
+
 <p>
-    Bienvenido al Marketplace Vecinal de CH Living.
+Bienvenido al Marketplace Vecinal de CH Living.
 </p>
 
 <p>
-    Este espacio ha sido creado para fomentar la convivencia, apoyar emprendimientos y fortalecer la comunidad.
+Este espacio ha sido creado para fomentar la convivencia,
+apoyar emprendimientos y fortalecer la comunidad.
 </p>
 
 <h3>¿Qué puedes hacer aquí?</h3>
@@ -40,52 +57,66 @@
     <li>💼 Promocionar servicios permitidos.</li>
     <li>🤝 Apoyar emprendedores.</li>
 </ul>
+
+<div class="card">
+    <h3>Sofá reclinable</h3>
+    <p>$4,500 MXN</p>
+</div>
+
 <div class="card">
     <h3>Bicicleta de montaña</h3>
     <p>$2,800 MXN</p>
 </div>
 
+<br>
+
+<button class="btn"
+onclick="document.getElementById('rules').style.display='block'">
+Leer bases y publicar anuncio
+</button>
+
+<div id="rules" style="display:none">
+
 <h2>Bases y Condiciones</h2>
 
 <p>
-    Todas las publicaciones son revisadas por la administración antes de ser publicadas.
+Todas las publicaciones son revisadas por la administración antes de ser publicadas.
 </p>
 
 <p>
-    CH Living únicamente facilita la difusión de publicaciones entre residentes.
-    Las negociaciones se realizan fuera de la plataforma.
+CH Living únicamente facilita la difusión de publicaciones entre residentes.
+Las negociaciones se realizan fuera de la plataforma.
 </p>
 
 <h3>No se permitirán publicaciones que contengan:</h3>
 
 <ul>
-    <li>❌ Contenido ofensivo o discriminatorio.</li>
-    <li>❌ Lenguaje inapropiado.</li>
+    <li>❌ Contenido ofensivo, discriminatorio o que afecte la convivencia vecinal.</li>
+    <li>❌ Lenguaje inapropiado o palabras altisonantes.</li>
+    <li>❌ Fotografías o imágenes inapropiadas.</li>
     <li>❌ Información falsa o engañosa.</li>
-    <li>❌ Productos o servicios ilegales.</li>
-    <li>❌ Contenido que afecte la convivencia vecinal.</li>
-    <li>❌ Material violento o de acoso.</li>
+    <li>❌ Venta de productos ilegales o prohibidos.</li>
     <li>❌ Publicidad no autorizada.</li>
-    <li>❌ Productos prohibidos por la ley.</li>
+    <li>❌ Material violento, intimidatorio o de acoso.</li>
+    <li>❌ Contenido que viole el reglamento del condominio.</li>
 </ul>
 
 <h3>Responsabilidad</h3>
 
 <p>
-    Cada residente es responsable de la información publicada,
-    así como de los acuerdos realizados con otros vecinos.
+Cada residente es responsable de la información publicada y de los acuerdos realizados.
 </p>
 
 <p>
-    CH Living y la administración no participan en pagos,
-    entregas, garantías o disputas entre usuarios.
+CH Living y la administración no participan en pagos, entregas,
+garantías o disputas entre usuarios.
 </p>
 
 <h3>Objetivo comunitario</h3>
 
 <p>
-    Este espacio busca fortalecer la convivencia vecinal,
-    apoyar emprendimientos y fomentar la colaboración entre residentes.
+Este espacio busca fortalecer la convivencia vecinal,
+apoyar emprendimientos y fomentar la colaboración entre residentes.
 </p>
 
 <label>
@@ -96,12 +127,16 @@
 <br><br>
 
 <button class="btn" onclick="openForm()">
-    Continuar y crear anuncio
+Continuar y crear anuncio
 </button>
+
+</div>
+
+<div id="form" style="display:none">
 
 <h2>Crear Anuncio</h2>
 
-<input placeholder="Título del anuncio">
+<input type="text" placeholder="Título del anuncio">
 
 <select>
     <option>Venta</option>
@@ -112,49 +147,96 @@
     <option>Clases particulares</option>
 </select>
 
-<input placeholder="Precio">
+<input type="text" placeholder="Precio">
 
 <textarea placeholder="Descripción"></textarea>
 
 <h3>Medios de contacto</h3>
 
-<label><input type="checkbox"> WhatsApp</label><br>
-<label><input type="checkbox"> Teléfono</label><br>
-<label><input type="checkbox"> Correo electrónico</label><br>
+<label>
+<input type="checkbox">
+WhatsApp
+</label>
 
-<br>
+<br><br>
 
-<input placeholder="Número de WhatsApp">
+<label>
+<input type="checkbox">
+Teléfono
+</label>
 
-<input placeholder="Correo electrónico">
+<br><br>
+
+<label>
+<input type="checkbox">
+Correo electrónico
+</label>
+
+<br><br>
+
+<input type="text" placeholder="Número de WhatsApp">
+
+<input type="text" placeholder="Teléfono">
+
+<input type="email" placeholder="Correo electrónico">
 
 <input type="file">
 
 <p>
-    Los datos de contacto únicamente serán visibles para residentes autorizados.
+Los datos de contacto únicamente serán visibles para residentes autorizados.
 </p>
 
 <p>
-    Tu publicación será revisada por la administración antes de ser visible para la comunidad.
+Tu publicación será revisada por la administración antes de ser visible para la comunidad.
 </p>
 
 <button class="btn"
-    onclick="alert('Anuncio enviado a revisión')">
-    Enviar a revisión
+onclick="alert('Anuncio enviado a revisión')">
+Enviar a revisión
 </button>
+
 </div>
+
+</div>
+
 </section>
 
 <section id="mis" class="view">
+
 <h2>Mis anuncios</h2>
-<div class="card">Sofá reclinable - Pendiente</div>
-<div class="card">Clases de inglés - Aprobado</div>
+
+<div class="card">
+Sofá reclinable — Pendiente
+</div>
+
+<div class="card">
+Clases de inglés — Aprobado
+</div>
+
 </section>
 
 <section id="admin" class="view">
+
 <h2>Panel Administrador</h2>
-<div class="card">Sofá reclinable - Pendiente<br><br><button class="btn">Aprobar</button></div>
+
+<div class="card">
+Sofá reclinable — Pendiente
+
+<br><br>
+
+<button class="btn">
+Aprobar
+</button>
+
+</div>
+
 </section>
-</main></div>
+
+</main>
+
+</div>
+
 <script src="js/script.js"></script>
-</body></html>
+
+</body>
+</html>
