@@ -154,31 +154,40 @@ Continuar y crear anuncio
 <h3>Medios de contacto</h3>
 
 <label>
-<input type="checkbox">
+<input type="checkbox"
+id="wa"
+onclick="toggleContact()">
 WhatsApp
 </label>
 
-<br><br>
-
 <label>
-<input type="checkbox">
+<input type="checkbox"
+id="tel"
+onclick="toggleContact()">
 Teléfono
 </label>
 
-<br><br>
-
 <label>
-<input type="checkbox">
+<input type="checkbox"
+id="mail"
+onclick="toggleContact()">
 Correo electrónico
 </label>
 
-<br><br>
+<div id="waBox" style="display:none">
+    <input id="whatsapp"
+    placeholder="Número de WhatsApp">
+</div>
 
-<input type="text" placeholder="Número de WhatsApp">
+<div id="telBox" style="display:none">
+    <input id="telefono"
+    placeholder="Teléfono">
+</div>
 
-<input type="text" placeholder="Teléfono">
-
-<input type="email" placeholder="Correo electrónico">
+<div id="mailBox" style="display:none">
+    <input id="correo"
+    placeholder="Correo electrónico">
+</div>
 
 <input type="file">
 
