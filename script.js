@@ -1,1 +1,0 @@
-function show(id){document.querySelectorAll('.view').forEach(v=>v.classList.remove('active'));document.getElementById(id).classList.add('active')} function openForm(){if(!document.getElementById('chk').checked){alert('Debes aceptar las reglas');return;} document.getElementById('form').style.display='block';}
