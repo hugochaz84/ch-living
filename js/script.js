@@ -32,31 +32,52 @@ function toggleContact(){
         ? "block" : "none";
 }
 
-function enviarAnuncio(){
+function enviarAnuncio() {
 
-    let titulo =
-        document.querySelector('input[placeholder="Título del anuncio"]').value;
+    let titulo = document.getElementById("titulo").value.trim();
+    let precio = document.getElementById("precio").value.trim();
+    let descripcion = document.getElementById("descripcion").value.trim();
 
-    let descripcion =
-        document.querySelector("textarea").value;
+    let wa = document.getElementById("wa").checked;
+    let tel = document.getElementById("tel").checked;
+    let mail = document.getElementById("mail").checked;
 
-    let contacto =
-        document.getElementById("wa").checked ||
-        document.getElementById("tel").checked ||
-        document.getElementById("mail").checked;
+    let whatsapp = document.getElementById("whatsapp").value.trim();
+    let telefono = document.getElementById("telefono").value.trim();
+    let correo = document.getElementById("correo").value.trim();
 
-    if(titulo.trim() === ""){
-        alert("Ingresa un título.");
+    if (titulo === "") {
+        alert("Ingresa un título del anuncio.");
         return;
     }
 
-    if(descripcion.trim() === ""){
+    if (precio === "") {
+        alert("Ingresa el precio.");
+        return;
+    }
+
+    if (descripcion === "") {
         alert("Ingresa una descripción.");
         return;
     }
 
-    if(!contacto){
-        alert("Selecciona un medio de contacto.");
+    if (!wa && !tel && !mail) {
+        alert("Selecciona al menos un medio de contacto.");
+        return;
+    }
+
+    if (wa && whatsapp === "") {
+        alert("Ingresa tu número de WhatsApp.");
+        return;
+    }
+
+    if (tel && telefono === "") {
+        alert("Ingresa tu teléfono.");
+        return;
+    }
+
+    if (mail && correo === "") {
+        alert("Ingresa tu correo electrónico.");
         return;
     }
 
