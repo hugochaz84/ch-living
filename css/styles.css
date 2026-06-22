@@ -171,3 +171,24 @@ ul{
         width:100%;
     }
 }
+.card{
+    border:3px solid red !important;
+}
+
+.card h3{
+    color:red !important;
+    background:yellow !important;
+    font-size:32px !important;
+    font-weight:bold !important;
+    display:block !important;
+    visibility:visible !important;
+    opacity:1 !important;
+    line-height:1.2 !important;
+    margin:0 0 10px 0 !important;
+    padding:0 !important;
+}
+
+.card p{
+    color:blue !important;
+    font-size:26px !important;
+}
