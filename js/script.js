@@ -50,10 +50,18 @@ function enviarAnuncio() {
         alert("Ingresa un título del anuncio.");
         return;
     }
+      let tipo = document.getElementById("tipo").value;
 
-    if (precio === "") {
-        alert("Ingresa el precio.");
-        return;
+      if (
+    tipo !== "Donación" &&
+    tipo !== "Intercambio" &&
+    tipo !== "Emprendimiento vecinal" &&
+    precio === ""
+) {
+    alert("Ingresa el precio.");
+    return;
+}
+    
     }
 
     if (descripcion === "") {
@@ -82,4 +90,19 @@ function enviarAnuncio() {
     }
 
     alert("Anuncio enviado a revisión.");
+}
+
+function cambiarTipo(){
+
+    let tipo = document.getElementById("tipo").value;
+
+    if(
+        tipo === "Donación" ||
+        tipo === "Intercambio" ||
+        tipo === "Emprendimiento vecinal"
+    ){
+        document.getElementById("precioBox").style.display = "none";
+    } else {
+        document.getElementById("precioBox").style.display = "block";
+    }
 }
