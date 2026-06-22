@@ -172,23 +172,31 @@ ul{
     }
 }
 .card{
-    border:3px solid red !important;
+    background:white;
+    color:#222;
+    padding:25px;
+    border-radius:20px;
+    margin-top:20px;
+    box-shadow:0 6px 20px rgba(0,0,0,.10);
 }
 
 .card h3{
-    color:red !important;
-    background:yellow !important;
-    font-size:32px !important;
-    font-weight:bold !important;
-    display:block !important;
-    visibility:visible !important;
-    opacity:1 !important;
-    line-height:1.2 !important;
-    margin:0 0 10px 0 !important;
-    padding:0 !important;
+    color:#222;
+    margin:0 0 10px 0;
+    font-size:24px;
+    font-weight:600;
 }
 
 .card p{
-    color:blue !important;
-    font-size:26px !important;
+    color:#1E5A94;
+    font-size:22px;
+    font-weight:700;
+    margin:0;
+}
+
+.card small{
+    display:block;
+    margin-top:10px;
+    color:#777;
+    font-size:13px;
 }
