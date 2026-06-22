@@ -139,7 +139,7 @@ Continuar y crear anuncio
 type="text"
 placeholder="Título del anuncio">
 
-<select>
+<select <select id="tipo" onchange="cambiarTipo()">
     <option>Venta</option>
     <option>Servicio</option>
     <option>Donación</option>
@@ -148,9 +148,11 @@ placeholder="Título del anuncio">
     <option>Clases particulares</option>
 </select>
 
-<input id="precio"
-type="text"
-placeholder="Precio">
+<div id="precioBox">
+    <input id="precio"
+    type="text"
+    placeholder="Precio (MXN)">
+</div>
 
 <textarea id="descripcion"
 placeholder="Descripción"></textarea>
