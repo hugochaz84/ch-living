@@ -1,20 +1,21 @@
 function show(id){
 
-    document.querySelectorAll(".view").forEach(v=>{
-        v.classList.remove("active");
+    document.querySelectorAll(".view").forEach(view=>{
+        view.classList.remove("active");
     });
 
     document.getElementById(id).classList.add("active");
 
-    if(
-        id === "inicio" ||
-        id === "usuarios"
-    ){
-        document.querySelector(".sidebar").style.display = "none";
+    const menu = document.querySelector(".sidebar");
+
+    if(id === "inicio" || id === "usuarios"){
+        menu.style.display = "none";
     }else{
-        document.querySelector(".sidebar").style.display = "block";
+        menu.style.display = "block";
     }
 }
+
+show("inicio");
 
 function openForm(){
 
