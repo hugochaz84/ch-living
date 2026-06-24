@@ -1,6 +1,8 @@
 function mostrarUsuarios() {
-    document.getElementById("login").classList.remove("active");
-    document.getElementById("usuarios").classList.add("active");
+
+    ocultarMenus();
+
+    show("usuarios");
 }
 
 function show(id){
@@ -119,4 +121,36 @@ function enviarAnuncio(){
     }
 
     alert("Anuncio enviado a revisión.");
+}
+
+function ocultarMenus() {
+    document.getElementById("menuResidente").style.display = "none";
+    document.getElementById("menuAdmin").style.display = "none";
+}
+
+function entrarJuan() {
+
+    ocultarMenus();
+
+    document.getElementById("menuResidente").style.display = "block";
+
+    show("juan");
+}
+
+function entrarMaria() {
+
+    ocultarMenus();
+
+    document.getElementById("menuResidente").style.display = "block";
+
+    show("maria");
+}
+
+function entrarAdmin() {
+
+    ocultarMenus();
+
+    document.getElementById("menuAdmin").style.display = "block";
+
+    show("adminpanel");
 }
