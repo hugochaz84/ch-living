@@ -13,11 +13,11 @@ body{
 }
 
 .sidebar{
+    display:none;
     width:100%;
     background:#123D6B;
     color:white;
-    padding:20px;
-    box-sizing:border-box;
+    padding:20px 0;
 }
 
 .sidebar h2{
