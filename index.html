@@ -13,15 +13,31 @@
 
 <div class="app">
 
-<aside class="sidebar">
+<!-- MENÚ RESIDENTES -->
+
+<aside id="menuResidente" class="sidebar">
+
     <h2>CH Living</h2>
 
     <ul>
-        <li onclick="show('inicio')">🏠 Inicio</li>
-        <li onclick="show('market')">🏘️ Marketplace Vecinal</li>
-        <li onclick="show('usuarios')">👥 Usuarios</li>
-        <li onclick="show('adminpanel')">🛡️ Administrador</li>
+        <li onclick="show('juan')">🏠 Inicio</li>
+        <li onclick="show('market')">🛒 Marketplace</li>
     </ul>
+
+</aside>
+
+<!-- MENÚ ADMIN -->
+
+<aside id="menuAdmin" class="sidebar">
+
+    <h2>CH Living</h2>
+
+    <ul>
+        <li onclick="show('adminpanel')">📊 Dashboard</li>
+        <li onclick="show('usuarios')">👥 Residentes</li>
+        <li onclick="show('market')">🛒 Marketplace</li>
+    </ul>
+
 </aside>
 
 <main>
@@ -56,7 +72,7 @@
     <p>Departamento 302 · Torre A</p>
 
     <button class="btn"
-    onclick="show('juan')">
+onclick="entrarJuan()">
         Ingresar
     </button>
 </div>
@@ -66,7 +82,7 @@
     <p>Departamento 504 · Torre B</p>
 
     <button class="btn"
-    onclick="show('maria')">
+onclick="entrarMaria()">
         Ingresar
     </button>
 </div>
@@ -75,7 +91,7 @@
     <h3>🛡 Administrador</h3>
 
     <button class="btn"
-    onclick="show('adminpanel')">
+onclick="entrarAdmin()">
         Ingresar
     </button>
 </div>
