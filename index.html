@@ -27,8 +27,60 @@
 <main>
 
 <section id="inicio" class="view active">
-    <h1>CH Living</h1>
-    <p>Portal Condominal</p>
+
+<div class="login-screen">
+
+    <h1>CH Living Connect</h1>
+
+    <h2>
+        Conectando residentes,<br>
+        administración y servicios.
+    </h2>
+
+    <p>Portal Integral Residencial</p>
+
+    <button class="btn"
+    onclick="show('usuarios')">
+        Ingresar
+    </button>
+
+</div>
+
+</section>
+
+<section id="usuarios" class="view">
+
+<h1>Seleccionar usuario</h1>
+
+<div class="card">
+    <h3>👤 Juan Pérez</h3>
+    <p>Departamento 302 · Torre A</p>
+
+    <button class="btn"
+    onclick="show('juan')">
+        Ingresar
+    </button>
+</div>
+
+<div class="card">
+    <h3>👤 María García</h3>
+    <p>Departamento 504 · Torre B</p>
+
+    <button class="btn"
+    onclick="show('maria')">
+        Ingresar
+    </button>
+</div>
+
+<div class="card">
+    <h3>🛡 Administrador</h3>
+
+    <button class="btn"
+    onclick="show('adminpanel')">
+        Ingresar
+    </button>
+</div>
+
 </section>
 
 <section id="market" class="view">
@@ -230,7 +282,75 @@ onclick="enviarAnuncio()">
 
 </section>
 
-<section id="mis" class="view">
+<section id="juan" class="view">
+
+<h1>Juan Pérez</h1>
+
+<div class="card">
+    <h3>Estado de cuenta</h3>
+    <p>Adeudo: $1,500 MXN</p>
+    <p>Mayo y Junio pendientes.</p>
+</div>
+
+<div class="card">
+    <h3>Cuota extraordinaria</h3>
+    <p>Pagada ✔️</p>
+</div>
+
+<div class="card">
+    <h3>Marketplace</h3>
+    <p>✅ Sofá reclinable.</p>
+    <p>⏳ Cremas artesanales.</p>
+</div>
+
+</section>
+
+<section id="maria" class="view">
+
+<h1>María García</h1>
+
+<div class="card">
+    <h3>Estado de cuenta</h3>
+    <p>Sin adeudos ✔️</p>
+</div>
+
+<div class="card">
+    <h3>Aviso administrativo</h3>
+    <p>⚠️ Disposición incorrecta de basura.</p>
+</div>
+
+<div class="card">
+    <h3>Marketplace</h3>
+    <p>❌ Venta de ropa rechazada.</p>
+</div>
+
+</section>
+
+<section id="adminpanel" class="view">
+
+<h1>Dashboard Administrador</h1>
+
+<div class="card">
+    <h3>Residentes</h3>
+    <p>Total: 2</p>
+</div>
+
+<div class="card">
+    <h3>Adeudos</h3>
+    <p>Juan Pérez: $1,500 MXN</p>
+</div>
+
+<div class="card">
+    <h3>Anuncios</h3>
+    <p>1 pendiente.</p>
+</div>
+
+<div class="card">
+    <h3>Avisos</h3>
+    <p>1 aviso activo.</p>
+</div>
+
+</section>
 
 <h2>Mis anuncios</h2>
 
