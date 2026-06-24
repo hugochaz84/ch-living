@@ -18,21 +18,22 @@ body{
 }
 
 .sidebar h2{
-    margin-top:0;
-    margin-bottom:30px;
+    margin-bottom:20px;
+}
 }
 
 .sidebar ul{
-    list-style:none;
-    padding:0;
+    display:flex;
+    overflow-x:auto;
+    gap:15px;
+    padding:10px;
+    white-space:nowrap;
 }
 
 .sidebar li{
-    padding:15px;
-    margin-bottom:10px;
-    border-radius:12px;
-    cursor:pointer;
-    transition:0.2s;
+    flex-shrink:0;
+    padding:15px 20px;
+    border-radius:20px;
 }
 
 .sidebar li:hover{
