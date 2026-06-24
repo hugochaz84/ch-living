@@ -33,9 +33,21 @@
     <h2>CH Living</h2>
 
     <ul>
-        <li onclick="show('adminpanel')">📊 Dashboard</li>
-        <li onclick="show('usuarios')">👥 Residentes</li>
-        <li onclick="show('market')">🛒 Marketplace</li>
+        <li onclick="show('adminpanel')">
+📊 Dashboard
+</li>
+
+<li onclick="show('residentes')">
+👥 Residentes
+</li>
+
+<li onclick="show('aprobaciones')">
+✅ Aprobar anuncios
+</li>
+
+<li onclick="show('market')">
+🛒 Marketplace
+</li>
     </ul>
 
 </aside>
@@ -376,6 +388,35 @@ onclick="mostrarUsuarios()">
 onclick="mostrarUsuarios()">
     Cerrar sesión
 </button>
+</section>
+
+<section id="aprobaciones" class="view">
+
+<h1>Aprobar anuncios</h1>
+
+<div class="card">
+    <h3>Sofá reclinable</h3>
+    <p>Juan Pérez</p>
+
+    <button class="btn">
+        Aprobar
+    </button>
+</div>
+
+<div class="card">
+    <h3>Venta de ropa</h3>
+    <p>María García</p>
+
+    <button class="btn">
+        Rechazar
+    </button>
+</div>
+
+<button class="btn"
+onclick="show('adminpanel')">
+    Volver al dashboard
+</button>
+
 </section>
 
 </main>
