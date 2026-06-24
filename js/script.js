@@ -1,10 +1,19 @@
 function show(id){
 
-    document.querySelectorAll(".view")
-    .forEach(v => v.classList.remove("active"));
+    document.querySelectorAll(".view").forEach(v=>{
+        v.classList.remove("active");
+    });
 
-    document.getElementById(id)
-    .classList.add("active");
+    document.getElementById(id).classList.add("active");
+
+    if(
+        id === "inicio" ||
+        id === "usuarios"
+    ){
+        document.querySelector(".sidebar").style.display = "none";
+    }else{
+        document.querySelector(".sidebar").style.display = "block";
+    }
 }
 
 function openForm(){
