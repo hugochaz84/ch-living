@@ -1,3 +1,8 @@
+function mostrarUsuarios() {
+    document.getElementById("login").classList.remove("active");
+    document.getElementById("usuarios").classList.add("active");
+}
+
 function show(id){
 
     document.querySelectorAll(".view").forEach(view=>{
