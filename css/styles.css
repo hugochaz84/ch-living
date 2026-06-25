@@ -237,3 +237,41 @@ ul{
     font-size:20px;
     margin:30px 0;
 }
+
+.filtros{
+
+    display:flex;
+
+    gap:10px;
+
+    flex-wrap:wrap;
+
+    margin-top:15px;
+
+}
+
+.btnFiltro{
+
+    padding:12px 18px;
+
+    border:none;
+
+    border-radius:30px;
+
+    cursor:pointer;
+
+    background:#e7edf8;
+
+    color:#24477c;
+
+    font-weight:bold;
+
+}
+
+.btnFiltro.active{
+
+    background:#24477c;
+
+    color:white;
+
+}
