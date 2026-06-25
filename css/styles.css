@@ -120,10 +120,23 @@ main{
 
 .card h3{
     color:#222;
+    margin:0 0 10px 0;
+    font-size:24px;
+    font-weight:600;
 }
 
 .card p{
-    color:#444;
+    color:#1E5A94;
+    font-size:22px;
+    font-weight:700;
+    margin:0;
+}
+
+.card small{
+    display:block;
+    margin-top:10px;
+    color:#777;
+    font-size:13px;
 }
 
 /* ===================================================== */
@@ -241,42 +254,7 @@ ul{
     }
 }
 
-/* ===================================================== */
-
-/* TARJETAS PERSONALIZADAS */
-
-/* ===================================================== */
-.card{
-    background:white;
-    color:#222;
-    padding:25px;
-    border-radius:20px;
-    margin-top:20px;
-    box-shadow:0 6px 20px rgba(0,0,0,.10);
-}
-
-.card h3{
-    color:#222;
-    margin:0 0 10px 0;
-    font-size:24px;
-    font-weight:600;
-}
-
-.card p{
-    color:#1E5A94;
-    font-size:22px;
-    font-weight:700;
-    margin:0;
-}
-
-.card small{
-    display:block;
-    margin-top:10px;
-    color:#777;
-    font-size:13px;
-}
-
-/* ===================================================== */
+/* ======================= */
 
 /* PANTALLA DE INICIO (CH LIVING CONNECT) */
 
