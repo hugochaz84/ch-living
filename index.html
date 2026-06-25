@@ -473,6 +473,77 @@ onclick="enviarAnuncio()">
 
 </section>
 
+<section id="residentes" class="view">
+
+<div class="hero">
+
+    <h1>👥 Residentes</h1>
+
+    <p>
+        Consulta la información de los residentes por torre.
+    </p>
+
+</div>
+
+<div class="card">
+
+    <h3>Filtrar por torre</h3>
+
+    <div class="filtros">
+
+        <button class="btnFiltro active"
+                onclick="filtrarTorre('todos', this)">
+            Todas
+        </button>
+
+        <button class="btnFiltro"
+                onclick="filtrarTorre('A', this)">
+            Torre A
+        </button>
+
+        <button class="btnFiltro"
+                onclick="filtrarTorre('B', this)">
+            Torre B
+        </button>
+
+    </div>
+
+</div>
+
+
+<div id="cardJuan" class="card residente">
+
+    <h2>👤 Juan Pérez</h2>
+
+    <p><strong>Departamento:</strong> A302</p>
+
+    <p><strong>Torre:</strong> A</p>
+
+    <button class="btn"
+            onclick="show('detalleJuan')">
+        Ver expediente
+    </button>
+
+</div>
+
+
+<div id="cardMaria" class="card residente">
+
+    <h2>👤 María García</h2>
+
+    <p><strong>Departamento:</strong> B504</p>
+
+    <p><strong>Torre:</strong> B</p>
+
+    <button class="btn"
+            onclick="show('detalleMaria')">
+        Ver expediente
+    </button>
+
+</div>
+
+</section>
+
 <section id="aprobaciones" class="view">
 
 <h1>Aprobar anuncios</h1>
