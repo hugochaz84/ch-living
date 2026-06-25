@@ -188,3 +188,34 @@ function filtrarTorre() {
     }
 
 }
+
+function filtrarTorre(torre, boton){
+
+    document.querySelectorAll(".btnFiltro").forEach(btn=>{
+        btn.classList.remove("active");
+    });
+
+    boton.classList.add("active");
+
+    if(torre==="todos"){
+
+        document.getElementById("cardJuan").style.display="block";
+        document.getElementById("cardMaria").style.display="block";
+
+    }
+
+    if(torre==="A"){
+
+        document.getElementById("cardJuan").style.display="block";
+        document.getElementById("cardMaria").style.display="none";
+
+    }
+
+    if(torre==="B"){
+
+        document.getElementById("cardJuan").style.display="none";
+        document.getElementById("cardMaria").style.display="block";
+
+    }
+
+}
