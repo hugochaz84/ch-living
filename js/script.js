@@ -12,14 +12,6 @@ function show(id){
     });
 
     document.getElementById(id).classList.add("active");
-
-    const menu = document.querySelector(".sidebar");
-
-    if(id === "inicio" || id === "usuarios"){
-        menu.style.display = "none";
-    }else{
-        menu.style.display = "block";
-    }
 }
 
 show("inicio");
