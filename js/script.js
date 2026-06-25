@@ -157,3 +157,34 @@ function iniciarSesion() {
 
     }
 }
+
+function filtrarTorre() {
+
+    let torre =
+        document.getElementById("filtroTorre").value;
+
+    if (torre === "todos") {
+
+        document.getElementById("residenteJuan").style.display = "block";
+
+        document.getElementById("residenteMaria").style.display = "block";
+
+    }
+
+    if (torre === "A") {
+
+        document.getElementById("residenteJuan").style.display = "block";
+
+        document.getElementById("residenteMaria").style.display = "none";
+
+    }
+
+    if (torre === "B") {
+
+        document.getElementById("residenteJuan").style.display = "none";
+
+        document.getElementById("residenteMaria").style.display = "block";
+
+    }
+
+}
