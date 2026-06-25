@@ -128,29 +128,40 @@ function ocultarMenus() {
     document.getElementById("menuAdmin").style.display = "none";
 }
 
-function entrarJuan() {
+function iniciarSesion() {
+
+    let usuario = document.getElementById("usuario").value.trim();
+    let password = document.getElementById("password").value.trim();
 
     ocultarMenus();
 
-    document.getElementById("menuResidente").style.display = "block";
+    if (usuario === "A302" && password === "12345") {
 
-    show("juan");
-}
+        document.getElementById("menuResidente").style.display = "block";
 
-function entrarMaria() {
+        show("juan");
 
-    ocultarMenus();
+    }
 
-    document.getElementById("menuResidente").style.display = "block";
+    else if (usuario === "B504" && password === "12345") {
 
-    show("maria");
-}
+        document.getElementById("menuResidente").style.display = "block";
 
-function entrarAdmin() {
+        show("maria");
 
-    ocultarMenus();
+    }
 
-    document.getElementById("menuAdmin").style.display = "block";
+    else if (usuario === "administrador" && password === "12345") {
 
-    show("adminpanel");
+        document.getElementById("menuAdmin").style.display = "block";
+
+        show("adminpanel");
+
+    }
+
+    else {
+
+        alert("Usuario o contraseña incorrectos.");
+
+    }
 }
