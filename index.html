@@ -77,35 +77,34 @@
 
 <section id="usuarios" class="view">
 
-<h1>Seleccionar usuario</h1>
+<h1>Iniciar sesión</h1>
 
 <div class="card">
-    <h3>👤 Juan Pérez</h3>
-    <p>Departamento 302 · Torre A</p>
 
-    <button class="btn"
-onclick="entrarJuan()">
+    <input
+        type="text"
+        id="usuario"
+        placeholder="Usuario">
+
+    <input
+        type="password"
+        id="password"
+        placeholder="Contraseña">
+
+    <br><br>
+
+    <button class="btn" onclick="iniciarSesion()">
         Ingresar
     </button>
-</div>
 
-<div class="card">
-    <h3>👤 María García</h3>
-    <p>Departamento 504 · Torre B</p>
+    <br><br>
 
-    <button class="btn"
-onclick="entrarMaria()">
-        Ingresar
-    </button>
-</div>
+    <p><strong>Usuarios de prueba:</strong></p>
 
-<div class="card">
-    <h3>🛡 Administrador</h3>
+    <p>A302 / 12345</p>
+    <p>B504 / 12345</p>
+    <p>administrador / 12345</p>
 
-    <button class="btn"
-onclick="entrarAdmin()">
-        Ingresar
-    </button>
 </div>
 
 </section>
